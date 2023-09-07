@@ -54,12 +54,8 @@ const getMessage = async (req, res) => {
         res.status(200).send({ status: 200, 
             message: `
             Dear Donor,
-            Your recent donation means the world to us! 
-            Your support has already made an impact, and we hope you'll consider helping us again in the future. 
-            Together, we can do even more.
-            With gratitude,
-            [Animesh Karne]
-            [AK and Company]
+                Your Donation is means a lot to us .
+                Please Try and make more donations.
             ` 
         })
 
