@@ -17,7 +17,7 @@ const createDonation = async (req, res) => {
 
 const getDonations = async (req, res) => {
     try {
-        const donationData = await Donation.find()
+         const donationData = await Donation.find().maxTimeMS(20000)
         res.status(200).send({
             status: 200, message: "Donation Data Fetached Successfully !", data: donationData
         })
